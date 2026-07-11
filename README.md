@@ -8,7 +8,7 @@ No dashboard. No admin panel. No forms. The chat is the product — the owner re
 
 ## Live Demo
 
-**Telegram Bot:** [@kirana_supermarket_bot](https://t.me/kirana_supermarket_bot)
+**Telegram Bot:** [@kirana_super_bot](https://t.me/kirana_super_bot)
 
 Deployed on Railway and kept running continuously — message it directly to try any of the flows below.
 
