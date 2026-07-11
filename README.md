@@ -1,4 +1,4 @@
-# Supermarket Ops Agent
+# 🛒 Supermarket Ops Agent — AI-Powered Kirana Store Assistant
 
 <p align="center">
   <b>An intelligent Telegram-based supermarket operations agent powered by Google Gemini 2.5 Flash</b>
