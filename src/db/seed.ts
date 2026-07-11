@@ -1,7 +1,6 @@
 import db from "./index";
 
 const products = [
-  // name, unit, hsn, gst_rate, cost_price, sell_price, qty, reorder_level, is_loose
   ["Aashirvaad Atta 5kg", "packet", "1101", 5, 210, 250, 40, 10, 0],
   ["Tata Salt 1kg", "packet", "2501", 5, 18, 25, 60, 15, 0],
   ["Amul Butter 100g", "packet", "0405", 12, 48, 62, 30, 10, 0],
@@ -14,15 +13,26 @@ const products = [
   ["Toor Dal (loose)", "kg", "0713", 0, 95, 120, 40, 10, 1],
 ];
 
-const insert = db.prepare(`
-  INSERT INTO products (name, unit, hsn_code, gst_rate, cost_price, sell_price, qty, reorder_level, is_loose)
-  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-`);
+const count = db
+  .prepare("SELECT COUNT(*) AS count FROM products")
+  .get() as { count: number };
 
-const insertMany = db.transaction((rows: any[]) => {
-  for (const row of rows) insert.run(...row);
-});
+if (count.count === 0) {
+  const insert = db.prepare(`
+    INSERT INTO products
+    (name, unit, hsn_code, gst_rate, cost_price, sell_price, qty, reorder_level, is_loose)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
 
-insertMany(products);
+  const insertMany = db.transaction((rows: any[]) => {
+    for (const row of rows) {
+      insert.run(...row);
+    }
+  });
 
-console.log(`✅ Seeded ${products.length} products.`);
+  insertMany(products);
+
+  console.log(`✅ Seeded ${products.length} products.`);
+} else {
+  console.log("ℹ️ Products already exist. Skipping seed.");
+}
