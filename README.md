@@ -2,13 +2,18 @@
 
 **An AI agent that runs an Indian kirana store end-to-end, through a single Telegram chat.**
 
-No dashboard. No admin panel. No forms. The chat is the product — the owner receives stock, cuts GST-correct bills, manages customer credit (khata), closes the day, and generates invoices and analysis decks, all in plain shopkeeper English.
+<p align="center">
+  <b>An intelligent Telegram-based supermarket operations agent powered by Google Gemini 2.5 Flash</b>
+</p>
 
----
+<p align="center">
+  Inventory Management • AI Billing • GST Calculation • Customer Khata • Business Memory
+</p>
+
 
 ## Live Demo
 
-**Telegram Bot:** [@kirana_super_bot](https://t.me/kirana_super_bot)
+**Telegram Bot:** [@Kirana_super_bot](https://t.me/Kirana_super_bot)
 
 Deployed on Railway and kept running continuously — message it directly to try any of the flows below.
 
@@ -204,6 +209,16 @@ SQLite is the single source of truth. The model holds no business state of its o
 
 ---
 
+## Deployment
+
+The bot is deployed on **Railway**, running continuously via Telegram polling. Railway handles:
+
+- Continuous execution and automatic restarts
+- Environment variable management (`TELEGRAM_BOT_TOKEN`, `GOOGLE_GENERATIVE_AI_API_KEY`)
+- Cloud hosting for the SQLite database and the bot process
+
+---
+
 ## Local Setup
 
 ```bash
@@ -275,35 +290,11 @@ Bot:  Done. Ramesh's credit balance updated to ₹500.
 
 ---
 
-## Screenshots
-
-**Stock query**
-
-_[add screenshot]_
-
-**Multi-item bill with GST breakup**
-
-_[add screenshot]_
-
-**Khata credit and balance check**
-
-_[add screenshot]_
-
-**Generated PDF invoice**
-
-_[add screenshot]_
-
-**Generated analysis deck (PPTX)**
-
-_[add screenshot]_
-
----
-
 ## Deliverables
 
 | Requirement | Status |
 |---|---|
-| Live Telegram bot | ✅ [@kirana_supermarket_bot](https://t.me/kirana_supermarket_bot), deployed on Railway |
+| Live Telegram bot | ✅ [@Kirana_super_bot](https://t.me/Kirana_super_bot), deployed on Railway |
 | Built on a modern agent harness | ✅ Vercel AI SDK + Gemini 2.5 Flash |
 | Custom skill/tool surface | ✅ Inventory, billing, khata, reports & documents, preferences |
 | PDF invoice generation | ✅ `generate_invoice_pdf` |
