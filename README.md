@@ -6,29 +6,11 @@ No dashboard. No admin panel. No forms. The chat is the product — the owner re
 
 ---
 
-## Table of Contents
-
-1. [Live Demo](#live-demo)
-2. [Overview](#overview)
-3. [Harness & Model Choice](#harness--model-choice)
-4. [Architecture](#architecture)
-5. [Control Loop](#control-loop)
-6. [Skill & Tool Design](#skill--tool-design)
-7. [How the Hard Parts Are Solved](#how-the-hard-parts-are-solved)
-8. [Database Design](#database-design)
-9. [Tech Stack](#tech-stack)
-10. [Local Setup](#local-setup)
-11. [Environment Variables](#environment-variables)
-12. [Example Conversations](#example-conversations)
-13. [Deliverables](#deliverables)
-14. [Future Improvements](#future-improvements)
-
----
-
 ## Live Demo
 
-**Telegram Bot:** [@kirana_super_bot](https://t.me/kirana_super_bot)
+**Telegram Bot:** [@kirana_supermarket_bot](https://t.me/kirana_supermarket_bot)
 
+Deployed on Railway and kept running continuously — message it directly to try any of the flows below.
 
 ---
 
@@ -293,17 +275,40 @@ Bot:  Done. Ramesh's credit balance updated to ₹500.
 
 ---
 
+## Screenshots
+
+**Stock query**
+
+_[add screenshot]_
+
+**Multi-item bill with GST breakup**
+
+_[add screenshot]_
+
+**Khata credit and balance check**
+
+_[add screenshot]_
+
+**Generated PDF invoice**
+
+_[add screenshot]_
+
+**Generated analysis deck (PPTX)**
+
+_[add screenshot]_
+
+---
+
 ## Deliverables
 
 | Requirement | Status |
 |---|---|
-| Live Telegram bot | ✅ [@kirana_supermarket_bot](https://t.me/kirana_supermarket_bot) |
+| Live Telegram bot | ✅ [@kirana_supermarket_bot](https://t.me/kirana_supermarket_bot), deployed on Railway |
 | Built on a modern agent harness | ✅ Vercel AI SDK + Gemini 2.5 Flash |
 | Custom skill/tool surface | ✅ Inventory, billing, khata, reports & documents, preferences |
 | PDF invoice generation | ✅ `generate_invoice_pdf` |
 | PPTX analysis deck | ✅ `generate_analysis_deck` |
 | README | ✅ this document |
-| 4–5 min walkthrough recording | _[add link here]_ |
 
 ---
 
