@@ -1,0 +1,14 @@
+node_modules/
+kirana_env/
+
+.env
+
+*.db
+*.db-shm
+*.db-wal
+
+dist/
+generated/
+src_backup/
+
+*.log
