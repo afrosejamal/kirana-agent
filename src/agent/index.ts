@@ -1,5 +1,5 @@
 import { generateText, stepCountIs, type ModelMessage } from "ai";
-import { groq } from "@ai-sdk/groq";
+import { createGoogleGenerativeAI } from "@ai-sdk/google";
 import { tools } from "./tools";
 import { buildSystemPrompt } from "./system-prompt";
 
@@ -39,7 +39,7 @@ export async function runAgentTurn(
     console.log(buildSystemPrompt());
 
     const result = await generateText({
-      model: groq("llama-3.3-70b-versatile"),
+      model: google("gemini-2.5-flash"),
       system: buildSystemPrompt(),
       messages: session.history,
       tools,

@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "db:schema": "tsx src/db/schema.ts",
-  "db:seed": "tsx src/db/seed.ts",
-  "start": "tsx src/bot/index.ts"
-},
+    "db:schema": "tsx src/db/schema.ts",
+    "db:seed": "tsx src/db/seed.ts",
+    "start": "tsx src/bot/index.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -20,7 +20,7 @@
     "typescript": "^7.0.2"
   },
   "dependencies": {
-    "@ai-sdk/google": "^4.0.10",
+    "@ai-sdk/google": "^4.0.12",
     "@ai-sdk/groq": "^4.0.7",
     "ai": "^7.0.18",
     "better-sqlite3": "^12.11.1",
