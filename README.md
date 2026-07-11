@@ -1,7 +1,5 @@
 # Supermarket Ops Agent
 
-**An AI agent that runs an Indian kirana store end-to-end, through a single Telegram chat.**
-
 <p align="center">
   <b>An intelligent Telegram-based supermarket operations agent powered by Google Gemini 2.5 Flash</b>
 </p>
