@@ -1,4 +1,8 @@
 import "dotenv/config";
+
+import "../db/schema";
+import "../db/seed";
+
 import { Telegraf } from "telegraf";
 import db from "../db";
 import { runAgentTurn, resetSession } from "../agent";

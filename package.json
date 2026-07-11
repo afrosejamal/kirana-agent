@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "db:schema": "tsx src/db/schema.ts",
+  "db:seed": "tsx src/db/seed.ts",
+  "start": "tsx src/bot/index.ts"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
