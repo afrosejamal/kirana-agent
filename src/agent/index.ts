@@ -1,5 +1,5 @@
 import { generateText, stepCountIs, type ModelMessage } from "ai";
-import { createGoogleGenerativeAI } from "@ai-sdk/google";
+import { google } from "@ai-sdk/google";
 import { tools } from "./tools";
 import { buildSystemPrompt } from "./system-prompt";
 
